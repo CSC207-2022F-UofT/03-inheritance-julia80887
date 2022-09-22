@@ -110,9 +110,9 @@ public abstract class Bag {
         if (this.numberOfContents == 0) {
             return null;
         } else {
-            this.numberOfContents -= 1;
             String poppedItem = this.contents[this.numberOfContents - 1];
             this.contents[this.numberOfContents - 1] = null;
+            this.numberOfContents -= 1;
             return poppedItem;
         }
     }
