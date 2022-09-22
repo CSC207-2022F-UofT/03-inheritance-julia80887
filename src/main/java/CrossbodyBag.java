@@ -50,7 +50,7 @@ public class CrossbodyBag extends Bag {
          *
          * To call a method defined in a parent, you use super.method_name(...)
          */
-        return this.color + " CrossbodyBag with " + this.numberOfStraps + " straps (" + this.numberOfContents + " / " +
+        return this.color + " Crossbody Bag with " + this.numberOfStraps + " straps (" + this.numberOfContents + " / " +
                 this.capacity + ")";
     }
 }
