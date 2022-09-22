@@ -84,7 +84,7 @@ public abstract class Bag {
                 System.arraycopy(this.contents, 0, newArray, 0, newArray.length - 1);
             }
 
-            newArray[this.numberOfContents] = item;
+            newArray[this.numberOfContents - 1] = item;
             this.contents = newArray;
             this.numberOfContents += 1;
             return true;
