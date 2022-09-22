@@ -79,12 +79,12 @@ public abstract class Bag {
     public boolean addItem (String item) {
         if (this.numberOfContents < this.capacity) {
 
-            String[] newArray = new String[this.numberOfContents];
+            String[] newArray = new String[this.numberOfContents + 1];
             if (newArray.length - 1 >= 0) {
                 System.arraycopy(this.contents, 0, newArray, 0, newArray.length - 1);
             }
 
-            newArray[this.numberOfContents - 1] = item;
+            newArray[this.numberOfContents ] = item;
             this.contents = newArray;
             this.numberOfContents += 1;
             return true;
