@@ -6,6 +6,55 @@
  * helpful while working through this exercise.
  */
 
+public class CrossbodyBag extends Bag {
+
+    /**
+     * Creates a new CrossbodyBag with the given color and
+     * capacity and numberOfStraps.
+     *
+     * @param color
+     * @param capacity
+     * @param numberOfStraps
+     */
+    int numberOfStraps;
+
+    public CrossbodyBag(String color, int capacity, int numberOfStraps) {
+        /**
+         * This is how we call the parent's constructor
+         * The Python equivalent is super().__init__(...)
+         */
+        super(color, capacity);
+        this.numberOfStraps = numberOfStraps;
+    }
+
+    public int getNumberOfStraps() {
+        return this.numberOfStraps;
+    }
+
+    @Override
+    public void enhance() {
+        /* TODO: Implement this method.
+         *       You may want to use the increaseCapacity() method that was
+         *       implemented in Bag.
+         *
+         * To call a method defined in a parent, you use super.method_name(...)
+         */
+        super.increaseCapacity(2);
+    }
+
+    @Override
+    public String toString() {
+        /* TODO: Implement this method.
+         *       You may want to use the increaseCapacity() method that was
+         *       implemented in Bag.
+         *
+         * To call a method defined in a parent, you use super.method_name(...)
+         */
+        return this.color + " CrossbodyBag with " + this.numberOfStraps + " (" + this.numberOfContents + " / " +
+                this.capacity + ")";
+    }
+}
+
 /*
  * TODO: Create a public class named CrossbodyBag which is a subclass of Bag
  *       In addition to the attributes in Bag, the CrossbodyBag should have an
